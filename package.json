@@ -25,6 +25,7 @@
     "setup": "git submodule update --init --recursive && npm install --legacy-peer-deps && npm run build:packages"
   },
   "dependencies": {
+    "@huggingface/inference": "^2.6.4",
     "@supabase/supabase-js": "^2.110.8",
     "ai-agent": "file:./packages/Open-Poe-AI/packages/agents",
     "autoprefixer": "^10.4.24",
