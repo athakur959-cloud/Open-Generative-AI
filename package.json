@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "dev": "next dev",
-    "build": "npm run build:css && babel src --out-dir dist --extensions .js,.jsx",
+    "build": "npm run build:packages && next build",
     "build:css": "npx tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.css --minify",
     "start": "next start",
     "lint": "next lint",
