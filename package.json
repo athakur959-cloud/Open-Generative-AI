@@ -13,6 +13,7 @@
   ],
   "scripts": {
     "dev": "next dev",
+    "postinstall": "npm run build:packages",
     "build": "npm run build:packages && next build",
     "build:css": "npx tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.css --minify",
     "start": "next start",
