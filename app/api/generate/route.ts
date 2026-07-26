@@ -1,7 +1,7 @@
-import { InferenceClient } from "@huggingface/inference";
+import { HfInference } from "@huggingface/inference";
 import { toBufferFromPayload } from "../../../lib/binaryPayload";
 
-const client = new InferenceClient(process.env.HF_TOKEN);
+const client = new HfInference(process.env.HF_TOKEN);
 
 export async function POST(req: Request) {
   try {
